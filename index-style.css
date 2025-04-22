@@ -1,0 +1,84 @@
+body {
+  font-family: "Microsoft JhengHei", sans-serif;
+  background : url(ocean.jpg);
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  font-size: 20px; /* 字體加大 */
+}
+
+header {
+  background-color: rgba(245, 245, 245, 0.475);
+  color: rgb(7, 88, 139);
+  padding: 40px 0;
+  text-align: center;
+}
+
+h1 {
+  font-size: 40px;
+  margin: 0 0 20px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 0;
+  margin: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 22px;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #f1c40f;
+}
+
+main {
+  color:whitesmoke;
+  text-align: center;
+  padding: 60px 20px;
+  font-size: 20px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 12px;
+  color: #484747;
+}
+
+/* 淡入動畫 */
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1.2s ease-in forwards;
+}
+
+/* 滑動動畫 */
+.slide-in {
+  transform: translateY(50px);
+  opacity: 0;
+  animation: slideIn 1.2s ease-out forwards;
+  animation-delay: 0.5s;
+}
+
+/* 關鍵影格 */
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

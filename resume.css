@@ -1,0 +1,61 @@
+.resume-wrapper {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  display: grid;
+  gap: 30px;
+}
+
+body {
+  background: url(paper.jpg);
+  background-size: cover;
+  overflow-x: hidden;
+}
+
+/* 動畫進場的卡片樣式 */
+.resume-card {
+  background: white;
+  padding: 25px;
+  border-left: 6px solid #3498db;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+  opacity: 0;
+  transform: translateX(100px); /* 預設右進場 */
+  animation: slideInRight 1s ease forwards;
+}
+
+/* 左邊進場卡片加上這個 class */
+.resume-card.left {
+  transform: translateX(-100px); /* 預設左進場 */
+  animation: slideInLeft 1s ease forwards;
+}
+
+/* 動畫定義 */
+@keyframes slideInLeft {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* 內容文字樣式 */
+.resume-card h2 {
+  color: #2c3e50;
+  margin-bottom: 15px;
+}
+
+.resume-card ul {
+  padding-left: 20px;
+  list-style-type: square;
+}
+
+.resume-card p {
+  line-height: 1.8;
+}
