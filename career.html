@@ -1,40 +1,44 @@
 <!DOCTYPE html>
-<link rel="stylesheet" href="career-style.css">
 <html lang="zh-Hant">
 <head>
   <meta charset="UTF-8">
   <title>測驗結果</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="career-style.css">
 </head>
 <body>
-  <header>
-    <h1>Ucan測驗結果</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html">首頁</a></li>
-        <li><a href="job.html">理想工作</a></li>
-        <li><a href="resume.html">履歷與自傳</a></li>
-      </ul>
-    </nav>
-  </header>
-  <main>
-    <section>
-      <h2>UCAN 測驗結果</h2>
-      <p>根據 UCAN 的職能診斷結果，我在資訊科技與管理、資料分析與應用、跨部門溝通協調等領域擁有這些優勢，顯示我在資訊管理領域具有發展潛力，特別適合從事 MIS（管理資訊系統）相關工作。</p>
-    </section>
-    <section>
-      <h2>104 興趣測驗（AR 類型）分析</h2>
-      <p>我的興趣類型為 AR（藝術型 x 實作型），這代表我喜歡動手實作，享受創造與設計的過程，對於視覺美感有敏銳的感受，喜歡從事需要創意的工作，這些特質使我對於結合創意與技術的工作充滿熱情，例如網頁設計、使用者介面設計等，這些也與 MIS 領域的某些職務相契合。</p>
-    </section>
-  </main>
-  <div style="display: flex; gap: 20px; justify-content: center;">
-    <img src="ucan_pr.png" alt="UCAN" width="800px">
-    <img src="104.png" alt="104" width="800px">
+
+  <!-- 導覽列 -->
+  <div class="navbar">
+    <a href="index.html">首頁</a>
+    <a href="job.html">理想職缺</a>
+    <a href="resume.html">基本資料</a>
   </div>
-  
+
+  <!-- 主要內容 -->
+  <main class="resume-wrapper">
+    <div class="resume-card left">
+      <h2>UCAN 測驗結果</h2>
+      <p>從 UCAN 的職能診斷結果PR值當中可以得知，我在對於團隊合作及人際互動當中能力比較強，最高分的團隊合作PR值達到81分，說明了比起自己單槍匹馬，我更善於與別人分工去達成目的，相比之下我的持續學習及創新能力有待加強，要不怕麻煩，努力提升自己的能力，並持續完成自己的階段性目標。</p>
+    </div>
+
+    <div class="resume-card">
+      <h2>104 興趣測驗分析</h2>
+      <div class="intro-content">
+        <div class="intro-text">
+          <p>我的興趣何倫碼是屬於"C事務 x S社會"的類型，說明我的個性在待人方面，善解人意，重視人際關係多於成果，關心別人的情感，為人自律可靠，容易獲得他人信任，做事按部就班注重細節，喜歡幫助他人成長，也願意付出自己的時間服務社會。而這樣的特質讓我適合從事與人相處的工作，像是顧問、教師、業務銷售等。
+          </p>
+        </div>
+      </div>
+    </div>
+  </main>
+    <div class="image-section">
+      <img src="ucan_pr.png" alt="UCAN">
+      <img src="104.png" alt="104">
+    </div>
+
   <footer>
-    <p>Copyright ©  吳沛涵. All Rights Reserved.</p>
+    <p>Copyright © 吳沛涵. All Rights Reserved.</p>
   </footer>
- 
+
 </body>
 </html>
