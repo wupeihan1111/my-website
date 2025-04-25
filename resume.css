@@ -1,13 +1,13 @@
 .resume-wrapper {
   max-width: 900px;
-  margin: 40px auto;
+  margin: 20px auto;
   padding: 20px;
   display: grid;
   gap: 30px;
 }
 
 body {
-  background: url(paper.jpg);
+  background: url(tree.jpg);
   background-size: cover;
   overflow-x: hidden;
 }
@@ -17,6 +17,9 @@ body {
   background: white;
   padding: 25px;
   border-left: 6px solid #3498db;
+  border-right: 6px solid #3498db;
+  border-top: 2px solid #3498db;
+  border-bottom: 2px solid #3498db;
   border-radius: 12px;
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
   opacity: 0;
@@ -58,4 +61,53 @@ body {
 
 .resume-card p {
   line-height: 1.8;
+}
+
+.intro-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 30px;
+}
+
+.intro-text {
+  flex: 1;
+  min-width: 250px;
+}
+
+.intro-photo img {
+  width: 100%;
+  max-width: 170px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #4a4a4a;
+  color: white;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
+  z-index: 1000;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+footer {
+  text-align: center;
+  color: #484747;
+  padding: 20px;
 }

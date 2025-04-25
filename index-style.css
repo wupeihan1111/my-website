@@ -32,7 +32,7 @@ nav ul {
 nav a {
   text-decoration: none;
   color: white;
-  font-size: 22px;
+  font-size: 25px;
   font-weight: bold;
   transition: color 0.3s;
 }
@@ -45,7 +45,7 @@ main {
   color:whitesmoke;
   text-align: center;
   padding: 60px 20px;
-  font-size: 20px;
+  font-size: 30px;
 }
 
 footer {

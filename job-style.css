@@ -1,65 +1,96 @@
 body {
-  font-family: "Microsoft JhengHei", sans-serif;
-  background-color: #f0f2f5;
-  color: #2c3e50;
   margin: 0;
-  padding: 0;
+  padding-top: 70px;
+  font-family: Arial, sans-serif;
+  background: url(paperg.jpg);
+  background-size: cover;
   overflow-x: hidden;
 }
 
-header {
-  background-color: #34495e;
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #4a4a4a;
   color: white;
-  padding: 30px 20px;
-  text-align: center;
+  padding: 15px 30px;
+  display: flex;
+  gap: 20px;
+  z-index: 1000;
 }
 
-.job-container {
-  max-width: 900px;
-  margin: 50px auto;
-  padding: 20px;
-}
-
-.job-title {
-  font-size: 28px;
+.navbar a {
+  color: white;
+  text-decoration: none;
   font-weight: bold;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+   
+}
+
+.resume-wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  display: grid;
+  gap: 30px;
+}
+
+/* 內容文字樣式 */
+.resume-card h2 {
+  color: #2c3e50;
   margin-bottom: 15px;
-  opacity: 0;
-  transform: translateX(-100px);
-  animation: slideInLeft 1.2s ease-out forwards;
 }
 
-.job-company {
-  font-size: 22px;
-  color: #2980b9;
-  margin-bottom: 10px;
-  opacity: 0;
-  transform: translateX(100px);
-  animation: slideInRight 1.2s ease-out forwards;
-  animation-delay: 0.3s;
-}
-
-.job-details {
-  background: #fff;
-  padding: 25px;
-  border-radius: 12px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-  opacity: 0;
-  animation: fadeIn 1.5s ease-out forwards;
-  animation-delay: 0.6s;
-}
-
-.job-details ul {
-  list-style: disc;
+.resume-card ul {
   padding-left: 20px;
+  list-style-type: square;
+}
+
+.resume-card p {
   line-height: 1.8;
 }
 
-@keyframes slideInLeft {
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
+.intro-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 30px;
+}
+
+.intro-text {
+  flex: 1;
+  min-width: 250px;
+}
+
+.intro-photo img {
+  width: 100%;
+  max-width: 170px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.resume-card {
+  background: white;
+  padding: 25px;
+  border-left: 6px solid #70d7ff;
+  border-right: 6px solid #70d7ff;
+  border-top: 2px solid #70d7ff;
+  border-bottom: 2px solid #70d7ff;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+  opacity: 0;
+  transform: translateX(100px);
+  animation: slideInRight 1s ease forwards;
+}
+
+.resume-card.left {
+  transform: translateX(-100px);
+  animation: slideInLeft 1s ease forwards;
 }
 
 @keyframes slideInRight {
@@ -69,8 +100,30 @@ header {
   }
 }
 
-@keyframes fadeIn {
+@keyframes slideInLeft {
   to {
     opacity: 1;
+    transform: translateX(0);
   }
 }
+
+footer {
+  text-align: center;
+  color: #484747;
+  padding: 20px;
+}
+
+.image-section {
+  max-width: 900px;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.image-section img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
